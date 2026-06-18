@@ -49,46 +49,7 @@ type BibleVersions = {
 type ScriptureDB = Record<string, BibleVersions>;
 
 const initialScriptureDB: ScriptureDB = {
-  "Genesis 1:1": {
-    "KJV": "In the beginning God created the heaven and the earth.",
-    "NKJV": "In the beginning God created the heavens and the earth.",
-    "NIV": "In the beginning God created the heavens and the earth.",
-    "ESV": "In the beginning, God created the heavens and the earth.",
-    "AMP": "In the beginning God (Elohim) created the heavens and the earth.",
-    "NLT": "In the beginning God created the heavens and the earth.",
-  },
-  "James 1:17": {
-    "KJV": "Every good gift and every perfect gift is from above, and cometh down from the Father of lights, with whom is no variableness, neither shadow of turning.",
-    "NKJV": "Every good gift and every perfect gift is from above, and comes down from the Father of lights, with whom there is no variation or shadow of turning.",
-    "NIV": "Every good and perfect gift is from above, coming down from the Father of the heavenly lights, who does not change like shifting shadows.",
-    "ESV": "Every good gift and every perfect gift is from above, coming down from the Father of lights, with whom there is no variation or shadow due to change.",
-    "AMP": "Every good thing given and every perfect gift is from above, coming down from the Father of lights, with whom there is no variation or shifting shadow.",
-    "NLT": "Whatever is good and perfect is a gift coming down to us from God our Father, who created all the lights in the heavens. He never changes or casts a shifting shadow.",
-  },
-  "Psalm 132:15": {
-        "KJV": "I will abundantly bless her provision: I will satisfy her poor with bread.",
-        "NKJV": "I will abundantly bless her provision; I will satisfy her poor with bread.",
-        "NIV": "I will bless her with abundant provisions; her poor I will satisfy with food.",
-        "ESV": "I will abundantly bless her provisions; I will satisfy her poor with bread.",
-        "AMP": "I will abundantly bless her provisions; I will satisfy her poor with bread.",
-        "NLT": "I will bless this city and make it prosperous; I will satisfy its poor with food."
-  },
-  "John 8:32": {
-    "KJV": "And ye shall know the truth, and the truth shall make you free.",
-    "NKJV": "And you shall know the truth, and the truth shall make you free.",
-    "NIV": "Then you will know the truth, and the truth will set you free.",
-    "ESV": "and you will know the truth, and the truth will set you free.",
-    "AMP": "And you will know the truth [regarding Salvation], and the truth will set you free [from the penalty of sin].",
-    "NLT": "And you will know the truth, and the truth will set you free.",
-  },
-  "Matthew 15:29-37": {
-    "KJV": "29 And Jesus departed from thence, and came nigh unto the sea of Galilee; and went up into a mountain, and sat down there. 30 And great multitudes came unto him, having with them those that were lame, blind, dumb, maimed, and many others, and cast them down at Jesus' feet; and he healed them: 31 Insomuch that the multitude wondered, when they saw the dumb to speak, the maimed to be whole, the lame to walk, and the blind to see: and they glorified the God of Israel. 32 Then Jesus called his disciples unto him, and said, I have compassion on the multitude, because they continue with me now three days, and have nothing to eat: and I will not send them away fasting, lest they faint in the way. 33 And his disciples say unto him, Whence should we have so much bread in the wilderness, as to fill so great a multitude? 34 And Jesus saith unto them, How many loaves have ye? And they said, Seven, and a few little fishes. 35 And he commanded the multitude to sit down on the ground. 36 And he took the seven loaves and the fishes, and gave thanks, and brake them, and gave to his disciples, and the disciples to the multitude. 37 And they did all eat, and were filled: and they took up of the broken meat that was left seven baskets full.",
-    "NKJV": "29 Jesus departed from there, skirted the Sea of Galilee, and went up on the mountain and sat down there. 30 Then great multitudes came to Him, having with them the lame, blind, mute, maimed, and many others; and they laid them down at Jesus' feet, and He healed them. 31 So the multitude marveled when they saw the mute speaking, the maimed made whole, the lame walking, and the blind seeing; and they glorified the God of Israel. 32 Now Jesus called His disciples to Himself and said, 'I have compassion on the multitude, because they have now continued with Me three days and have nothing to eat. And I do not want to send them away hungry, lest they faint on the way.' 33 Then His disciples said to Him, 'Where could we get enough bread in the wilderness to fill such a great multitude?' 34 Jesus said to them, 'How many loaves do you have?' And they said, 'Seven, and a few little fish.' 35 So He commanded the multitude to sit down on the ground. 36 And He took the seven loaves and the fish and gave thanks, broke them and gave them to His disciples; and the disciples gave to the multitude. 37 So they all ate and were filled, and they took up seven large baskets full of the fragments that were left.",
-    "NIV": "29 Jesus left there and went along the Sea of Galilee. Then he went up on a mountainside and sat down. 30 Great crowds came to him, bringing the lame, the blind, the crippled, the mute and many others, and laid them at his feet; and he healed them. 31 The crowd was amazed when they saw the mute speaking, the crippled made well, the lame walking and the blind seeing; and they praised the God of Israel. 32 Jesus called his disciples to him and said, 'I have compassion for these people; they have already been with me three days and have nothing to eat. I do not want to send them away hungry, or they may faint on the way.' 33 His disciples answered, 'Where could we get enough bread in this remote place to feed such a crowd?' 34 'How many loaves do you have?' Jesus asked. 'Seven,' they replied, 'and a few small fish.' 35 He told the crowd to sit down on the ground. 36 Then he took the seven loaves and the fish, and when he had given thanks, he broke them and gave them to the disciples, and they in turn to the people. 37 They all ate and were satisfied. Afterward the disciples picked up seven basketfuls of broken pieces that were left over.",
-    "ESV": "29 Jesus went on from there and walked beside the Sea of Galilee. And he went up on the mountain and sat down there. 30 And great crowds came to him, bringing with them the lame, the blind, the crippled, the mute, and many others, and they put them at his feet, and he healed them, 31 so that the crowd wondered, when they saw the mute speaking, the crippled healthy, the lame walking, and the blind seeing. And they glorified the God of Israel. 32 Then Jesus called his disciples to him and said, 'I have compassion on the crowd because they have been with me now three days and have nothing to eat. And I am unwilling to send them away hungry, lest they faint on the way.' 33 And the disciples said to him, 'Where are we to get enough bread in such a desolate place to feed so great a crowd?' 34 And Jesus said to them, 'How many loaves do you have?' They said, 'Seven, and a few small fish.' 35 And directing the crowd to sit down on the ground, 36 he took the seven loaves and the fish, and having given thanks he broke them and gave them to the disciples, and the disciples gave them to the crowds. 37 And they all ate and were satisfied. And they took up seven baskets full of the broken pieces left over.",
-    "AMP": "29 Jesus went on from there and walked beside the Sea of Galilee. And He went up on the mountain and sat down there. 30 And great crowds came to Him, bringing with them the lame, the blind, the crippled, the mute, and many others, and they laid them down at His feet; and He healed them. 31 So the crowd was amazed when they saw the mute speaking, the crippled restored, the lame walking, and the blind seeing; and they praised and glorified the God of Israel. 32 Then Jesus called His disciples to Him and said, 'I have compassion on the crowd, because they have been with Me now three days and have nothing to eat; and I am unwilling to send them away hungry, lest they faint [from exhaustion] on the way.' 33 The disciples said to Him, 'Where are we to get enough bread in this isolated place to feed so great a crowd?' 34 Jesus asked them, 'How many loaves [of bread] do you have?' They said, 'Seven, and a few small fish.' 35 And He directed the crowd to sit down on the ground, 36 and He took the seven loaves and the fish; and when He had given thanks, He broke them and gave them to the disciples, and the disciples [gave them] to the crowds. 37 And they all ate and were satisfied. And they picked up seven large baskets full of the broken pieces that were left over.",
-    "NLT": "29 Jesus returned to the Sea of Galilee and climbed a hill and sat down. 30 A vast crowd brought to him people who were lame, blind, crippled, those who couldn't speak, and many others. They laid them before Jesus, and he healed them all. 31 The crowd was amazed! Those who hadn't been able to speak were talking, the crippled were made well, the lame were walking, and the blind could see again. And they praised the God of Israel. 32 Then Jesus called his disciples to him and said, 'I feel sorry for these people. They have been here with me for three days, and they have nothing left to eat. I don't want to send them away hungry, or they will faint along the way.' 33 The disciples replied, 'Where would we get enough food here in the wilderness for such a huge crowd?' 34 Jesus asked, 'How much bread do you have?' 'Seven loaves,' they replied, 'and a few small fish.' 35 So Jesus told all the people to sit down on the ground. 36 Then he took the seven loaves and the fish, thanked God for them, and broke them into pieces. He gave them to the disciples, who distributed the food to the crowd. 37 They all ate as much as they wanted. Afterward, the disciples picked up seven large baskets of leftover pieces.",
-  },
+  
   "1 Peter 5:7": {
     "KJV": "Casting all your care upon him; for he careth for you.",
     "NKJV": "casting all your care upon Him, for He cares for you.",
@@ -97,128 +58,113 @@ const initialScriptureDB: ScriptureDB = {
     "AMP": "casting all your anxiety [all your worries, all your concerns, once and for all] on Him, for He cares about you [with deepest affection, and watches over you very carefully].",
     "NLT": "Give all your worries and cares to God, for he cares about you."
   },
-  "Matthew 15:30": {
-    "KJV": "And great multitudes came unto him, having with them those that were lame, blind, dumb, maimed, and many others, and cast them down at Jesus' feet; and he healed them:",
-    "NKJV": "Then great multitudes came to Him, having with them the lame, blind, mute, maimed, and many others; and they laid them down at Jesus’ feet, and He healed them.",
-    "NIV": "Great crowds came to him, bringing the lame, the blind, the crippled, the mute and many others, and laid them at his feet; and he healed them.",
-    "ESV": "And great crowds came to him, bringing with them the lame, the blind, the crippled, the mute, and many others, and they put them at his feet, and he healed them,",
-    "AMP": "And great crowds came to Him, bringing with them the lame, the blind, the crippled, the mute, and many others, and they laid them down at His feet; and He healed them.",
-    "NLT": "A vast crowd brought to him people who were lame, blind, crippled, those who couldn't speak, and many others. They laid them before Jesus, and he healed them all."
+  "Psalm 8:4": {
+    "KJV": "What is man, that thou art mindful of him? and the son of man, that thou visitest him?",
+    "NKJV": "What is man that You are mindful of him, And the son of man that You visit him?",
+    "NIV": "what is mankind that you are mindful of them, human beings that you care for them?",
+    "ESV": "what is man that you are mindful of him, and the son of man that you care for him?",
+    "AMP": "What is man that You are mindful of him, And the son of [earthborn] man that You care for him?",
+    "NLT": "what are mere mortals that you should think about them, human beings that you should care for them?"
   },
-  "Matthew 11:28": {
-    "KJV": "Come unto me, all ye that labour and are heavy laden, and I will give you rest.",
-    "NKJV": "Come to Me, all you who labor and are heavy laden, and I will give you rest.",
-    "NIV": "Come to me, all you who are weary and burdened, and I will give you rest.",
-    "ESV": "Come to me, all who labor and are heavy laden, and I will give you rest.",
-    "AMP": "Come to Me, all who are weary and heavily burdened [by religious rituals that provide no peace], and I will give you rest [refreshing your souls with salvation].",
-    "NLT": "Then Jesus said, \"Come to me, all of you who are weary and carry heavy burdens, and I will give you rest.\""
+  "Jeremiah 29:11": {
+    "KJV": "For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end.",
+    "NKJV": "For I know the thoughts that I think toward you, says the LORD, thoughts of peace and not of evil, to give you a future and a hope.",
+    "NIV": "'For I know the plans I have for you,' declares the LORD, 'plans to prosper you and not to harm you, plans to give you hope and a future.'",
+    "ESV": "For I know the plans I have for you, declares the LORD, plans for welfare and not for evil, to give you a future and a hope.",
+    "AMP": "‘For I know the plans and thoughts that I have for you,’ says the LORD, ‘plans for peace and well-being and not for disaster, to give you a future and a hope.’",
+    "NLT": "'For I know the plans I have for you,' says the LORD. 'They are plans for good and not for disaster, to give you a future and a hope.'"
   },
-  "Matthew 15:30-31": {
-    "KJV": "30 And great multitudes came unto him, having with them those that were lame, blind, dumb, maimed, and many others, and cast them down at Jesus' feet; and he healed them: 31 Insomuch that the multitude wondered, when they saw the dumb to speak, the maimed to be whole, the lame to walk, and the blind to see: and they glorified the God of Israel.",
-    "NKJV": "30 Then great multitudes came to Him, having with them the lame, blind, mute, maimed, and many others; and they laid them down at Jesus’ feet, and He healed them. 31 So the multitude marveled when they saw the mute speaking, the maimed made whole, the lame walking, and the blind seeing; and they glorified the God of Israel.",
-    "NIV": "30 Great crowds came to him, bringing the lame, the blind, the crippled, the mute and many others, and laid them at his feet; and he healed them. 31 The crowd was amazed when they saw the mute speaking, the crippled made well, the lame walking and the blind seeing; and they praised the God of Israel.",
-    "ESV": "30 And great crowds came to him, bringing with them the lame, the blind, the crippled, the mute, and many others, and they put them at his feet, and he healed them, 31 so that the crowd wondered, when they saw the mute speaking, the crippled healthy, the lame walking, and the blind seeing. And they glorified the God of Israel.",
-    "AMP": "30 And great crowds came to Him, bringing with them the lame, the blind, the crippled, the mute, and many others, and they laid them down at His feet; and He healed them. 31 So the crowd was amazed when they saw the mute speaking, the crippled restored, the lame walking, and the blind seeing; and they praised and glorified the God of Israel.",
-    "NLT": "30 A vast crowd brought to him people who were lame, blind, crippled, those who couldn't speak, and many others. They laid them before Jesus, and he healed them all. 31 The crowd was amazed! Those who hadn't been able to speak were talking, the crippled were made well, the lame were walking, and the blind could see again. And they praised the God of Israel."
+  "John 3:16": {
+    "KJV": "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
+    "NKJV": "For God so loved the world that He gave His only begotten Son, that whoever believes in Him should not perish but have everlasting life.",
+    "NIV": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.",
+    "ESV": "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.",
+    "AMP": "For God so [greatly] loved and dearly prized the world, that He [even] gave His [One and] unique Son, so that whoever believes will trust in Him shall not perish, but have eternal life.",
+    "NLT": "For this is how God loved the world: He gave his one and only Son, so that everyone who believes in him will not perish but have eternal life."
   },
-  "Matthew 15:31-32": {
-    "KJV": "31 Insomuch that the multitude wondered, when they saw the dumb to speak, the maimed to be whole, the lame to walk, and the blind to see: and they glorified the God of Israel. 32 Then Jesus called his disciples unto him, and said, I have compassion on the multitude, because they continue with me now three days, and have nothing to eat: and I will not send them away fasting, lest they faint in the way.",
-    "NKJV": "31 So the multitude marveled when they saw the mute speaking, the maimed made whole, the lame walking, and the blind seeing; and they glorified the God of Israel. 32 Now Jesus called His disciples to Himself and said, “I have compassion on the multitude, because they have now continued with Me three days and have nothing to eat. And I do not want to send them away hungry, lest they faint on the way.”",
-    "NIV": "31 The crowd was amazed when they saw the mute speaking, the crippled made well, the lame walking and the blind seeing; and they praised the God of Israel. 32 Jesus called his disciples to him and said, “/I have compassion for these people; they have already been with me three days and have nothing to eat. I do not want to send them away hungry, or they may faint on the way.”",  
-    "ESV": "31 so that the crowd wondered, when they saw the mute speaking, the crippled healthy, the lame walking, and the blind seeing. And they glorified the God of Israel. 32 Then Jesus called his disciples to him and said, “I have compassion on the crowd because they have been with me now three days and have nothing to eat. And I am unwilling to send them away hungry, lest they faint on the way.”",
-    "AMP": "31 So the crowd was amazed when they saw the mute speaking, the crippled restored, the lame walking, and the blind seeing; and they praised and glorified the God of Israel. 32 Then Jesus called His disciples to Him and said, “I have compassion on the crowd, because they have been with Me now three days and have nothing to eat; and I am unwilling to send them away hungry, lest they faint [from exhaustion] on the way.”",
-    "NLT": "31 The crowd was amazed! Those who hadn't been able to speak were talking, the crippled were made well, the lame were walking, and the blind could see again. And they praised the God of Israel. 32 Then Jesus called his disciples to him and said, “I feel sorry for these people. They have been here with me for three days, and they have nothing left to eat. I don't want to send them away hungry, or they will faint along the way.”",
+  "Numbers 11:4-6": {
+    "KJV": "4 And the mixt multitude that was among them fell a lusting: and the children of Israel also wept again, and said, Who shall give us flesh to eat? 5 We remember the fish, which we did eat in Egypt freely; the cucumbers, and the melons, and the leeks, and the onions, and the garlick: 6 But now our soul is dried away: there is nothing at all, beside this manna, before our eyes.",
+    "NKJV": "4 Now the mixed multitude who were among them yielded to intense craving; so the children of Israel also wept again and said: 'Who will give us meat to eat? 5 We remember the fish which we ate freely in Egypt, the cucumbers, the melons, the leeks, the onions, and the garlic; 6 but now our whole being is dried up; there is nothing at all except this manna before our eyes!'",
+    "NIV": "4 The rabble with them began to crave other food, and again the Israelites started wailing and said, 'If only we had meat to eat! 5 We remember the fish we ate in Egypt at no cost—also the cucumbers, melons, leeks, onions and garlic. 6 But now we have lost our appetite; we never see anything but this manna!'",
+    "ESV": "4 Now the rabble that was among them had a strong craving. And the people of Israel also wept again and said, 'Oh that we had meat to eat! 5 We remember the fish we ate in Egypt that cost nothing, the cucumbers, the melons, the leeks, the onions, and the garlic. 6 But now our strength is dried up, and there is nothing at all but this manna to look at.'",
+    "AMP": "4 The rabble among them had a strong craving [for other food], and the Israelites wept again and said, 'Who will give us meat to eat? 5 We remember the fish we ate freely and without cost in Egypt, the cucumbers, the melons, the leeks, the onions, and the garlic; 6 but now our appetite is gone. There is nothing at all [to look at] except this manna.'",
+    "NLT": "4 Then the foreign rabble who were traveling with the Israelites began to crave the good things of Egypt. And the people of Israel also began to complain. 'Oh, for some meat!' they wailed. 5 'We remember the fish we used to eat for free in Egypt. And we had all the cucumbers, melons, leeks, onions, and garlic we wanted. 6 But now our appetites are gone. All we ever see is this manna!'"
   },
-  "James 1:6-8": {
-    "KJV": "6 But let him ask in faith, nothing wavering. For he that wavering is like a wave of the sea driven with the wind and tossed. 7 For let not that man think that he shall receive any thing of the Lord. 8 A double minded man is unstable in all his ways.",
-    "NKJV": "6 But let him ask in faith, with no doubting, for he who doubts is like a wave of the sea driven and tossed by the wind. 7 For let not that man suppose that he will receive anything from the Lord; 8 he is a double-minded man, unstable in all his ways.",
-    "NIV": "6 But when you ask, you must believe and not doubt, because the one who doubts is like a wave of the sea, blown and tossed by the wind. 7 That person should not expect to receive anything from the Lord. 8 Such a person is double-minded and unstable in all they do.",
-    "ESV": "6 But let him ask in faith, with no doubting, for the one who doubts is like a wave of the sea that is driven and tossed by the wind. 7 For that person must not suppose that he will receive anything from the Lord; 8 he is a double-minded man, unstable in all his ways.",
-    "AMP": "6 But he must ask [for wisdom] in faith, without doubting [God’s willingness to help], for the one who doubts is like a surging wave of the sea, blown and tossed by the wind. 7 For that person must not expect that he will receive anything [at all] from the Lord, 8 being a double-minded man, unstable and restless in all his ways [in everything he thinks, feels, or does].",
-    "NLT": "6 But when you ask him, be sure that your faith is in God alone. Do not doubt, for a person with divided loyalty is as unsettled as a wave of the sea that is blown and tossed by the wind. 7 Such people should not expect to receive anything from the Lord. 8 Their loyalty is divided between God and the world, and they are unstable in everything they do."
+  
+  "Numbers 11:10-15": {
+    "KJV": "10 Then Moses heard the people weep throughout their families, every man in the door of his tent: and the anger of the LORD was kindled greatly; Moses also was displeased. 11 And Moses said unto the LORD, Wherefore hast thou afflicted thy servant? and wherefore have I not found favour in thy sight, that thou layest the burden of all this people upon me? 12 Have I conceived all this people? have I begotten them, that thou shouldest say unto me, Carry them in thy bosom, as a nursing father beareth the sucking child, unto the land which thou swarest unto their fathers? 13 Whence should I have flesh to give unto all this people? for they weep unto me, saying, Give us flesh, that we may eat. 14 I am not able to bear all this people alone, because it is too heavy for me. 15 And if thou deal thus with me, kill me, I pray thee, out of hand, if I have found favour in thy sight; and let me not see my wretchedness.",
+    "NKJV": "10 Then Moses heard the people weeping throughout their families, everyone at the door of his tent; and the anger of the LORD was greatly aroused; Moses also was displeased. 11 So Moses said to the LORD, 'Why have You afflicted Your servant? And why have I not found favor in Your sight, that You have laid the burden of all these people on me? 12 Did I conceive all these people? Did I beget them, that You should say to me, \"Carry them in your bosom, as a guardian carries a nursing child,\" to the land which You swore to their fathers? 13 Where am I to get meat to give to all these people? For they weep all over me, saying, \"Give us meat, that we may eat.\" 14 I am not able to bear all these people alone, because the burden is too heavy for me. 15 If You treat me like this, please kill me here and now—if I have found favor in Your sight—and do not let me see my wretchedness!'",
+    "NIV": "10 Moses heard the people of every family wailing at the entrance to their tents. The Lord became exceedingly angry, and Moses was troubled. 11 He asked the Lord, 'Why have you brought this trouble on your servant? What have I done to displease you that you put the burden of all these people on me? 12 Did I conceive all these people? Did I give them birth? Why do you tell me to carry them in my arms, as a nurse carries an infant, to the land you promised on oath to their ancestors? 13 Where can I get meat for all these people? They keep wailing to me, \"Give us meat to eat!\" 14 I cannot carry all these people by myself; the burden is too heavy for me. 15 If this is how you are going to treat me, please go ahead and kill me—if I have found favor in your eyes—and do not let me face my ruin.'",
+    "ESV": "10 Moses heard the people weeping throughout their clans, everyone at the door of his tent. And the anger of the Lord blazed hotly, and Moses was displeased. 11 Moses said to the Lord, 'Why have you dealt ill with your servant? And why have I not found favor in your sight, that you lay the burden of all this people on me? 12 Did I conceive all this people? Did I give them birth, that you should say to me, \"Carry them in your bosom, as a nurse carries a nursing child,\" to the land that you swore to give their fathers? 13 Where am I to get meat to give to all this people? For they weep before me and say, \"Give us meat, that we may eat.\" 14 I am not able to carry all this people alone; the burden is too heavy for me. 15 If you will treat me like this, kill me at once, if I find favor in your sight, that I may not see my wretchedness.'",
+    "AMP": "10 Moses heard the people weeping throughout their families, everyone at the door of his tent; and the anger of the Lord was kindled greatly, and Moses was displeased. 11 So Moses said to the Lord, 'Why have You dealt so harshly with Your servant? And why have I not found favor in Your sight, that You have laid the burden of all this people on me? 12 Did I conceive all this people? Did I give birth to them, that You should say to me, \"Carry them in your bosom, as a nurse carries a nursing child,\" to the land which You swore to their fathers? 13 Where am I to get meat to give to all this people? For they weep before me, saying, \"Give us meat, that we may eat.\" 14 I am not able to carry all this people alone, because the burden is too heavy for me. 15 So if You are going to deal with me like this, please kill me at once, if I have found favor in Your sight, and do not let me see my wretchedness.'",
+    "NLT": "10 Moses heard all the families standing in the doorways of their tents weeping, and the Lord became extremely angry. Moses was also very aggravated. 11 And Moses said to the Lord, 'Why are you treating me, your servant, so harshly? Have mercy on me! Why are you laying the burden of all these people on me? 12 Did I give birth to them? Did I bring them into the world? Why do you tell me to carry them in my arms like a nurse carrying a baby? How can I carry them to the land you swore to give their ancestors? 13 Where am I supposed to get meat for all these people? They keep whining to me, saying, \"Give us meat to eat!\" 14 I can’t carry all these people by myself! The load is far too heavy. 15 If this is how you intend to treat me, just go ahead and kill me. Do me a favor and spare me this misery!'",
+   },
+  "Numbers 11:33": {
+    "KJV": "And while the flesh was yet between their teeth, ere it was chewed, the wrath of the LORD was kindled against the people, and the LORD smote the people with a very great plague.",
+    "NKJV": "But while the meat was still between their teeth, before it was chewed, the wrath of the LORD was aroused against the people, and the LORD struck the people with a very great plague.",
+    "NIV": "But while the meat was still between their teeth and before it could be consumed, the anger of the Lord burned against the people, and he struck them with a severe plague.",
+    "ESV": "While the meat was yet between their teeth, before it was consumed, the anger of the Lord was kindled against the people, and the Lord struck the people with a very great plague.",
+    "AMP": "While the meat was still between their teeth, before it was chewed, the anger of the Lord was kindled against the people, and the Lord struck the people with a very great plague.",
+    "NLT": "But while they were gorging themselves on the meat—while it was still in their mouths—the anger of the Lord blazed against the people, and he struck them with a severe plague."
   },
-  "Psalm 100:4": {
-    "KJV": "Enter into his gates with thanksgiving, and into his courts with praise: be thankful unto him, and bless his name.",
-    "NKJV": "Enter into His gates with thanksgiving, And into His courts with praise. Be thankful to Him, and bless His name.",
-    "NIV": "Enter his gates with thanksgiving and his courts with praise; give thanks to him and praise his name.",
-    "ESV": "Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name!",
-    "AMP": "Enter His gates with a song of thanksgiving And His courts with praise. Be thankful to Him, bless and praise His name.",
-    "NLT": "Enter his gates with thanksgiving; go into his courts with praise. Give thanks to him and praise his name."
+  "Numbers 11:10": {
+    "KJV": "Then Moses heard the people weep throughout their families, every man in the door of his tent: and the anger of the LORD was kindled greatly; Moses also was displeased.",
+    "NKJV": "Then Moses heard the people weeping throughout their families, everyone at the door of his tent; and the anger of the LORD was greatly aroused; Moses was also displeased.",
+    "NIV": "Moses heard the people of every family wailing at the entrance to their tents. The Lord became exceedingly angry, and Moses was troubled.",
+    "ESV": "Moses heard the people weeping throughout their clans, everyone at the door of his tent. And the anger of the Lord blazed hotly, and Moses was displeased.",
+    "AMP": "Moses heard the people weeping throughout their families, everyone at the door of his tent; and the anger of the Lord was kindled greatly, and Moses was displeased.",
+    "NLT": "Moses heard all the families standing in the doorways of their tents weeping, and the Lord became extremely angry. Moses was also very aggravated."
   },
-  "Psalm 22:3": {
-    "KJV": "But thou art holy, O thou that inhabitest the praises of Israel.",
-    "NKJV": "But You are holy, Enthroned in the praises of Israel.",
-    "NIV": "Yet you are enthroned as the Holy One; you are the one Israel praises.",
-    "ESV": "Yet you are holy, enthroned on the praises of Israel.",
-    "AMP": "Yet You are holy, O You who are enthroned upon the praises of Israel.",
-    "NLT": "Yet you are holy, enthroned on the praises of Israel."
+  "Numbers 11:9": {
+    "KJV": "And when the dew fell upon the camp in the night, the manna fell upon it.",
+    "NKJV": "And when the dew fell on the camp in the night, the manna fell on it.",
+    "NIV": "When the dew settled on the camp at night, the manna also came down.",
+    "ESV": "When the dew fell upon the camp in the night, the manna fell with it.",
+    "AMP": "When the dew fell on the camp at night, the manna fell with it.",
+    "NLT": "The manna came down on the camp each night when the dew fell."
   },
-  "Psalm 16:11": {
-    "KJV": "Thou wilt shew me the path of life: in thy presence is fulness of joy; at thy right hand there are pleasures for evermore.",
-    "NKJV": "You will show me the path of life; In Your presence is fullness of joy; At Your right hand are pleasures forevermore.",
-    "NIV": "You make known to me the path of life; you will fill me with joy in your presence, with eternal pleasures at your right hand.",
-    "ESV": "You make known to me the path of life; in your presence there is fullness of joy; at your right hand are pleasures forevermore.",
-    "AMP": "You will make known to me the path of life; In Your presence is fullness of joy; In Your right hand there are pleasures forevermore.",
-    "NLT": "You will show me the way of life, granting me the joy of your presence and the pleasures of living with you forever."
+  "Luke 19:10": {
+    "KJV": "For the Son of man is come to seek and to save that which was lost.",
+    "NKJV": "for the Son of Man has come to seek and to save that which was lost.",
+    "NIV": "For the Son of Man came to seek and to save the lost.",
+    "ESV": "For the Son of Man came to seek and to save the lost.",
+    "AMP": "For the Son of Man has come to seek and to save that which was lost.",
+    "NLT": "For the Son of Man came to seek and to save those who are lost."
   },
-  "Matthew 15:34-36": {
-    "KJV": "34 And Jesus saith unto them, How many loaves have ye? And they said, Seven, and a few little fishes. 35 And he commanded the multitude to sit down on the ground. 36 And he took the seven loaves and the fishes, and gave thanks, and brake them, and gave to his disciples, and the disciples to the multitude.",
-    "NKJV": "34 Jesus said to them, 'How many loaves do you have?' They said, 'Seven, and a few small fish.' 35 So He commanded the multitude to sit down on the ground. 36 And He took the seven loaves and the fish and gave thanks, broke them and gave them to His disciples; and the disciples gave them to the multitude.",
-    "NIV": "34 'How many loaves do you have?' Jesus asked. 'Seven,' they replied, 'and a few small fish.' 35 He told the crowd to sit down on the ground. 36 Then he took the seven loaves and the fish, and when he had given thanks, he broke them and gave them to the disciples, and they in turn to the people.",
-    "ESV": "34 And Jesus said to them, 'How many loaves do you have?' They said, 'Seven, and a few small fish.' 35 And directing the crowd to sit down on the ground, 36 he took the seven loaves and the fish, and having given thanks he broke them and gave them to the disciples, and the disciples gave them to the crowds.",
-    "AMP": "34 Jesus asked them, 'How many loaves [of bread] do you have?' They said, 'Seven, and a few small fish.' 35 And He directed the crowd to sit down on the ground, 36 and He took the seven loaves and the fish; and when He had given thanks, He broke them and gave them to the disciples, and the disciples [gave them] to the crowds.",
-    "NLT": "34 Jesus asked, 'How much bread do you have?' 'Seven loaves,' they replied, 'and a few small fish.' 35 So Jesus told all the people to sit down on the ground. 36 Then he took the seven loaves and the fish, thanked God for them, and broke them into pieces. He gave them to the disciples, who distributed the food to the crowd."
+  "Luke 12:6-7": {
+    "KJV": "6 Are not five sparrows sold for two farthings, and not one of them is forgotten before God? 7 But even the very hairs of your head are all numbered. Fear not therefore: ye are of more value than many sparrows.",
+    "NKJV": "6 Are not five sparrows sold for two copper coins? And not one of them is forgotten before God. 7 But the very hairs of your head are all numbered. Do not fear therefore; you are of more value than many sparrows.",
+    "NIV": "6 Are not five sparrows sold for two pennies? Yet not one of them is forgotten by God. 7 Indeed, the very hairs of your head are all numbered. Don’t be afraid; you are worth more than many sparrows.",
+    "ESV": "6 Are not five sparrows sold for two pennies? And not one of them is forgotten before God. 7 Why, even the hairs of your head are all numbered. Fear not; you are of more value than many sparrows.",
+    "AMP": "6 Are not five sparrows sold for two copper coins? Yet not one of them is forgotten before God. 7 But even the very hairs of your head are all numbered. Do not be afraid; you are more valuable than many sparrows.",
+    "NLT": "6 What is the price of five sparrows—two copper coins? Yet God does not forget a single one of them. 7 And the very hairs on your head are all numbered. So don’t be afraid; you are more valuable to God than a whole flock of sparrows."
   },
-  "Luke 6:38": {
-    "KJV": "Give, and it shall be given unto you; good measure, pressed down, and shaken together, and running over, shall men give into your bosom. For with the same measure that ye mete withal it shall be measured to you again.",
-    "NKJV": "Give, and it will be given to you: good measure, pressed down, shaken together, and running over will be put into your bosom. For with the same measure that you use, it will be measured back to you.",
-    "NIV": "Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap. For with the measure you use, it will be measured to you.",
-    "ESV": "give, and it will be given to you. Good measure, pressed down, shaken together, running over, will be put into your lap. For with the measure you use it will be measured back to you.",
-    "AMP": "Give, and it will be given to you. A good measure, pressed down, shaken together, running over, will they pour into the lap of your robe. For by your standard of measure [that is, the measure you use when you confer benefits on others] it will be measured to you in return.",
-    "NLT": "Give, and you will receive. Your gift will return to you in full—pressed down, shaken together to make room for more, running over, and poured into your lap. The amount you give will determine the amount you get back."
+  "1 Kings 17:8-16": {
+    "KJV": "8 And the word of the LORD came unto him, saying, 9 Arise, get thee to Zarephath, which belongeth to Zidon, and dwell there: behold, I have commanded a widow woman there to sustain thee. 10 So he arose and went to Zarephath. And when he came to the gate of the city, behold, the widow woman was there gathering of sticks: and he called to her, and said, Fetch me, I pray thee, a little water in a vessel, that I may drink. 11 And as she was going to fetch it, he called to her, and said, Bring me, I pray thee, a morsel of bread in thine hand. 12 And she said, As the LORD thy God liveth, I have not a cake, but an handful of meal in a barrel, and a little oil in a cruse: and, behold, I am gathering two sticks, that I may go in and dress it for me and my son, that we may eat it, and die. 13 And Elijah said unto her, Fear not; go and do as thou hast said: but make me thereof a little cake first, and bring it unto me, and after make for thee and for thy son. 14 For thus saith the LORD God of Israel, The barrel of meal shall not waste, neither shall the cruse of oil fail, until the day that the LORD sendeth rain upon the earth. 15 And she went and did according to the saying of Elijah: and she, and he, and her house, did eat many days. 16 And the barrel of meal wasted not, neither did the cruse of oil fail, according to the word of the LORD, which he spake by Elijah.",
+    "NKJV": "8 Then the word of the LORD came to him, saying, 9 'Arise, go to Zarephath, which belongs to Sidon, and dwell there. See, I have commanded a widow there to provide for you.' 10 So he arose and went to Zarephath. And when he came to the gate of the city, indeed, a widow was there gathering sticks. And he called to her and said, 'Please bring me a little water in a cup, that I may drink.' 11 And as she was going to get it, he called to her and said, 'Please bring me a morsel of bread in your hand.' 12 So she said, 'As the LORD your God lives, I do not have bread, only a handful of flour in a bin, and a little oil in a jar; and see, I am gathering a couple of sticks that I may go in and prepare it for myself and my son, that we may eat it, and die.' 13 And Elijah said to her, 'Do not fear; go and do as you have said, but make me a small cake from it first, and bring it to me; and afterward make some for yourself and your son. 14 For thus says the LORD God of Israel: \"The bin of flour shall not be used up, nor shall the jar of oil run dry, until the day the LORD sends rain on the earth.\"' 15 So she went and did according to the word of Elijah; and she and he and her household ate for many days. 16 The bin of flour was not used up, nor did the jar of oil run dry, according to the word of the LORD which He spoke by Elijah.",
+    "NIV": "8 Then the word of the Lord came to him: 9 'Go at once to Zarephath in the region of Sidon and stay there. I have directed a widow there to supply you with food.' 10 So he went to Zarephath. When he came to the town gate, a widow was there gathering sticks. He called to her and said, 'Would you bring me a little water in a jar so I may have a drink?' 11 As she was going to get it, he called, 'And please bring me a piece of bread.' 12 'As surely as the Lord your God lives,' she replied, 'I don’t have any bread—only a handful of flour in a jar and a little olive oil in a jug. I am gathering a few sticks to take home and make a meal for myself and my son, so that we may eat it—and die.' 13 Elijah said to her, 'Don’t be afraid. Go home and do as you have said. But first make a small loaf of bread for me from what you have and bring it to me, and then make something for yourself and your son. 14 For this is what the Lord, the God of Israel, says: \"The jar of flour will not be used up and the jug of oil will not run dry until the day the Lord sends rain on the land.\"' 15 She went away and did as Elijah had told her. So there was food every day for Elijah and for the woman and her family. 16 For the jar of flour was not used up and the jug of oil did not run dry, in keeping with the word of the Lord spoken by Elijah.",
+    "ESV": "8 Then the word of the Lord came to him, 9 'Arise, go to Zarephath, which belongs to Sidon, and dwell there. Behold, I have commanded a widow there to feed you.' 10 So he arose and went to Zarephath. And when he came to the gate of the city, behold, a widow was there gathering sticks. And he called to her and said, 'Bring me a little water in a vessel, that I may drink.' 11 And as she was going to bring it, he called to her and said, 'Bring me a morsel of bread in your hand.' 12 And she said, 'As the Lord your God lives, I have nothing baked, only a handful of flour in a jar and a little oil in a jug. And now I am gathering a couple of sticks that I may go in and prepare it for myself and my son, that we may eat it and die.' 13 And Elijah said to her, 'Do not fear; go and do as you have said. But first make me a little cake of it and bring it to me, and afterward make something for yourself and your son. 14 For thus says the Lord, the God of Israel, \"The jar of flour shall not be spent, and the jug of oil shall not be empty, until the day that the Lord sends rain upon the earth.\"' 15 And she went and did as Elijah said. And she and he and her household ate for many days. 16 The jar of flour was not spent, neither did the jug of oil become empty, according to the word of the Lord that he spoke by Elijah.",
+    "AMP": "8 Then the word of the Lord came to him, saying, 9 'Arise, go to Zarephath, which belongs to Sidon, and stay there. Behold, I have commanded a widow there to provide for you.' 10 So he arose and went to Zarephath. When he came to the gate of the city, behold, a widow was there gathering sticks. He called to her and said, 'Please bring me a little water in a jar, so that I may drink.' 11 As she was going to get it, he called to her and said, 'Please bring me a piece of bread in your hand.' 12 But she said, 'As the Lord your God lives, I have no bread, only a handful of flour in the bowl and a little oil in the jar; and see, I am gathering a few sticks so that I may go in and prepare it for me and my son, so that we may eat it, and die.' 13 Elijah said to her, 'Do not fear; go and do as you have said. Just make me a little cake from it first and bring it to me, and afterward make some for yourself and for your son. 14 For this is what the Lord God of Israel says: \"The bowl of flour shall not be exhausted, nor shall the jar of oil be empty, until the day that the Lord sends rain on the face of the earth.\"' 15 So she went and did as Elijah told her; and she and he and her household ate for many days. 16 The bowl of flour was not exhausted, nor was the jar of oil empty, in accordance with the word of the Lord which He spoke through Elijah.",
+    "NLT": "8 Then the Lord said to Elijah, 9 'Go and live in the village of Zarephath, near the city of Sidon. I have instructed a widow there to feed you.' 10 So he went to Zarephath. As he arrived at the gates of the village, he saw a widow gathering sticks. He called out to her, 'Please bring me a little water in a cup.' 11 As she was going to get it, he called to her, 'Bring me a bite of bread, too.' 12 But she said, 'I swear by the Lord your God that I don’t have a single piece of bread in the house. And I have only a handful of flour left in the jar and a little cooking oil in the bottom of the jug. I was just gathering a few sticks to cook this last meal for myself and my son, and then we will die.' 13 But Elijah said to her, 'Don’t be afraid! Go ahead and do just what you’ve said, but make a little bread for me first. Then use what’s left to prepare a meal for yourself and your son. 14 For this is what the Lord, the God of Israel, says: There will always be flour and olive oil left in your containers until the time the Lord sends rain and the crops grow again!' 15 So she did as Elijah said, and she and Elijah and her family continued to eat for many days. 16 There was always plenty of flour and olive oil left in the containers, just as the Lord had promised through Elijah."
   },
-  "2 Corinthians 9:6-8": {
-    "KJV": "6 But this I say, He which soweth sparingly shall reap also sparingly; and he which soweth bountifully shall reap also bountifully. 7 Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a cheerful giver. 8 And God is able to make all grace abound toward you; that ye, always having all sufficiency in all things, may abound to every good work:",
-    "NKJV": "6 But this I say: He who sows sparingly will also reap sparingly, and he who sows bountifully will also reap bountifully. 7 So let each one give as he purposes in his heart, not grudgingly or of necessity; for God loves a cheerful giver. 8 And God is able to make all grace abound toward you, that you, always having all sufficiency in all things, may have an abundance for every good work.",
-    "NIV": "6 Remember this: Whoever sows sparingly will also reap sparingly, and whoever sows bountifully will also reap bountifully. 7 Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver. 8 And God is able to bless you abundantly, so that in all things at all times, having all that you need, you will abound in every good work.",
-    "ESV": "6 The point is this: whoever sows sparingly will also reap sparingly, and whoever sows bountifully will also reap bountifully. 7 Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God loves a cheerful giver. 8 And God is able to make all grace abound to you, so that having all sufficiency in all things at all times, you may abound in every good work.",
-    "AMP": "6 Now [remember] this: he who sows sparingly will also reap sparingly, and he who sows generously will also reap generously. 7 Let each one give [thoughtfully and with purpose] just as he has decided in his heart, not grudgingly or under compulsion, for God loves a cheerful giver [and delights in the one whose heart is in his gift]. 8 And God is able to make all grace [every favor and earthly blessing] come in abundance to you, so that you may always [under all circumstances, regardless of the need] have complete sufficiency in everything [being completely self-sufficient in Him], and have an abundance for every good work and act of charity.",
-    "NLT": "6 Remember this—a farmer who plants only a few seeds will get a small crop. But the one who plants generously will get a generous crop. 7 You must each decide in your heart how much to give. And don’t give reluctantly or in response to pressure. “For God loves a person who gives cheerfully.” 8 And God will generously provide all you need. Then you will always have everything you need and plenty left over to share with others."
+  "1 Kings 17:9": {
+    "KJV": "9 Arise, get thee to Zarephath, which belongeth to Zidon, and dwell there: behold, I have commanded a widow woman there to sustain thee.",
+    "NKJV": "9 'Arise, go to Zarephath, which belongs to Sidon, and dwell there. See, I have commanded a widow there to provide for you.'",
+    "NIV": "9 'Go at once to Zarephath in the region of Sidon and stay there. I have directed a widow there to supply you with food.'",
+    "ESV": "9 'Arise, go to Zarephath, which belongs to Sidon, and dwell there. Behold, I have commanded a widow there to feed you.'",
+    "AMP": "9 'Arise, go to Zarephath, which belongs to Sidon, and stay there. Behold, I have commanded a widow there to provide for you.'",
+    "NLT": "9 'Go and live in the village of Zarephath, near the city of Sidon. I have instructed a widow there to feed you.'"
   },
-  "Deuteronomy 8:18": {
-    "KJV": "But thou shalt remember the LORD thy God: for it is he that giveth thee power to get wealth, that he may establish his covenant which he sware unto thy fathers, as it is this day.",
-    "NKJV": "And you shall remember the LORD your God, for it is He who gives you power to get wealth, that He may establish His covenant which He swore to your fathers, as it is this day.",
-    "NIV": "But remember the LORD your God, for it is he who gives you the ability to produce wealth, and so confirms his covenant, which he swore to your ancestors, as it is today.",
-    "ESV": "You shall remember the LORD your God, for it is he who gives you power to get wealth, that he may confirm his covenant that he swore to your fathers, as it is this day.",
-    "AMP": "But you shall remember [with profound respect] the LORD your God, for it is He who is giving you power to make wealth, that He may confirm His covenant which He swore to your fathers, as it is this day.",
-    "NLT": "Remember the LORD your God. He is the one who gives you power to be successful, in order to fulfill the covenant he confirmed to your ancestors with an oath, as he did today."
+  "1 Kings 17:10-15": {
+    "KJV": "10 So he arose and went to Zarephath. And when he came to the gate of the city, behold, the widow woman was there gathering of sticks: and he called to her, and said, Fetch me, I pray thee, a little water in a vessel, that I may drink. 11 And as she was going to fetch it, he called to her, and said, Bring me, I pray thee, a morsel of bread in thine hand. 12 And she said, As the LORD thy God liveth, I have not a cake, but an handful of meal in a barrel, and a little oil in a cruse: and, behold, I am gathering two sticks, that I may go in and dress it for me and my son, that we may eat it, and die. 13 And Elijah said unto her, Fear not; go and do as thou hast said: but make me thereof a little cake first, and bring it unto me, and after make for thee and for thy son. 14 For thus saith the LORD God of Israel, The barrel of meal shall not waste, neither shall the cruse of oil fail, until the day that the LORD sendeth rain upon the earth. 15 And she went and did according to the saying of Elijah: and she, and he, and her house, did eat many days.",
+    "NKJV": "10 So he arose and went to Zarephath. And when he came to the gate of the city, indeed, a widow was there gathering sticks. And he called to her and said, 'Please bring me a little water in a cup, that I may drink.' 11 And as she was going to get it, he called to her and said, 'Please bring me a morsel of bread in your hand.' 12 So she said, 'As the LORD your God lives, I do not have bread, only a handful of flour in a bin, and a little oil in a jar; and see, I am gathering a couple of sticks that I may go in and prepare it for myself and my son, that we may eat it, and die.' 13 And Elijah said to her, 'Do not fear; go and do as you have said, but make me a small cake from it first, and bring it to me; and afterward make some for yourself and your son. 14 For thus says the LORD God of Israel: \"The bin of flour shall not be used up, nor shall the jar of oil run dry, until the day the LORD sends rain on the earth.\"' 15 So she went and did according to the word of Elijah; and she and he and her household ate for many days.",
+    "NIV": "10 So he went to Zarephath. When he came to the town gate, a widow was there gathering sticks. He called to her and said, 'Would you bring me a little water in a jar so I may have a drink?' 11 As she was going to get it, he called, 'And please bring me a piece of bread.' 12 'As surely as the Lord your God lives,' she replied, 'I don’t have any bread—only a handful of flour in a jar and a little olive oil in a jug. I am gathering a few sticks to take home and make a meal for myself and my son, so that we may eat it—and die.' 13 Elijah said to her, 'Don’t be afraid. Go home and do as you have said. But first make a small loaf of bread for me from what you have and bring it to me, and then make something for yourself and your son. 14 For this is what the Lord, the God of Israel, says: \"The jar of flour will not be used up and the jug of oil will not run dry until the day the Lord sends rain on the land.\"' 15 She went away and did as Elijah had told her. So there was food every day for Elijah and for the woman and her family.",
+    "ESV": "10 So he arose and went to Zarephath. And when he came to the gate of the city, behold, a widow was there gathering sticks. And he called to her and said, 'Bring me a little water in a vessel, that I may drink.' 11 And as she was going to bring it, he called to her and said, 'Bring me a morsel of bread in your hand.' 12 And she said, 'As the Lord your God lives, I have nothing baked, only a handful of flour in a jar and a little oil in a jug. And now I am gathering a couple of sticks that I may go in and prepare it for myself and my son, that we may eat it and die.' 13 And Elijah said to her, 'Do not fear; go and do as you have said. But first make me a little cake of it and bring it to me, and afterward make something for yourself and your son. 14 For thus says the Lord, the God of Israel, \"The jar of flour shall not be spent, and the jug of oil shall not be empty, until the day that the Lord sends rain upon the earth.\"' 15 And she went and did as Elijah said. And she and he and her household ate for many days.",
+    "AMP": "10 So he arose and went to Zarephath. When he came to the gate of the city, behold, a widow was there gathering sticks. He called to her and said, 'Please bring me a little water in a jar, so that I may drink.' 11 As she was going to get it, he called to her and said, 'Please bring me a piece of bread in your hand.' 12 But she said, 'As the Lord your God lives, I have no bread, only a handful of flour in the bowl and a little oil in the jar; and see, I am gathering a few sticks so that I may go in and prepare it for me and my son, so that we may eat it, and die.' 13 Elijah said to her, 'Do not fear; go and do as you have said. Just make me a little cake from it first and bring it to me, and afterward make some for yourself and for your son. 14 For this is what the Lord God of Israel says: \"The bowl of flour shall not be exhausted, nor shall the jar of oil be empty, until the day that the Lord sends rain on the face of the earth.\"' 15 So she went and did as Elijah told her; and she and he and her household ate for many days.",
+    "NLT": "10 So he went to Zarephath. As he arrived at the gates of the village, he saw a widow gathering sticks. He called out to her, 'Please bring me a little water in a cup.' 11 As she was going to get it, he called to her, 'Bring me a bite of bread, too.' 12 But she said, 'I swear by the Lord your God that I don’t have a single piece of bread in the house. And I have only a handful of flour left in the jar and a little cooking oil in the bottom of the jug. I was just gathering a few sticks to cook this last meal for myself and my son, and then we will die.' 13 But Elijah said to her, 'Don’t be afraid! Go ahead and do just what you’ve said, but make a little bread for me first. Then use what’s left to prepare a meal for yourself and your son. 14 For this is what the Lord, the God of Israel, says: There will always be flour and olive oil left in your containers until the time the Lord sends rain and the crops grow again!' 15 So she did as Elijah said, and she and Elijah and her family continued to eat for many days."
   },
-  "Matthew 15:35": {
-    "KJV": "And he commanded the multitude to sit down on the ground.",
-    "NKJV": "So He commanded the multitude to sit down on the ground.",
-    "NIV": "He told the crowd to sit down on the ground.",
-    "ESV": "And directing the crowd to sit down on the ground,",
-    "AMP": "And He directed the crowd to sit down on the ground,",
-    "NLT": "So Jesus told all the people to sit down on the ground."
-  },
-  "Joshua 1:7-8": {
-    "KJV": "7 Only be thou strong and very courageous, that thou mayest observe to do according to all the law, which Moses my servant commanded thee: turn not from it to the right hand or to the left, that thou mayest prosper whithersoever thou goest. 8 This book of the law shall not depart out of thy mouth; but thou shalt meditate therein day and night, that thou mayest observe to do according to all that is written therein: for then thou shalt make thy way prosperous, and then thou shalt have good success.",
-    "NKJV": "7 Only be strong and very courageous, that you may observe to do according to all the law which Moses My servant commanded you; do not turn from it to the right hand or to the left, that you may prosper wherever you go. 8 This Book of the Law shall not depart from your mouth, but you shall meditate in it day and night, that you may observe to do according to all that is written in it. For then you will make your way prosperous, and then you will have good success.",
-    "NIV": "7 'Be strong and very courageous. Be careful to obey all the law my servant Moses gave you; do not turn from it to the right or to the left, that you may be successful wherever you go. 8 Keep this Book of the Law always on your lips; meditate on it day and night, so that you may be careful to do everything written in it. Then you will be prosperous and successful.'",
-    "ESV": "7 Only be strong and very courageous, being careful to do according to all the law that Moses my servant commanded you. Do not turn from it to the right hand or to the left, that you may have good success wherever you go. 8 This Book of the Law shall not depart from your mouth, but you shall meditate on it day and night, so that you may be careful to do according to all that is written in it. For then you will make your way prosperous, and then you will have good success.",
-    "AMP": "7 Only be strong and very courageous; be careful to do [everything] in accordance with the entire law which Moses My servant commanded you; do not turn from it to the right or to the left, so that you may prosper and be successful wherever you go. 8 This Book of the Law shall not depart from your mouth, but you shall read [and meditate on] it day and night, so that you may be careful to do [everything] in accordance with all that is written in it; for then you will make your way prosperous, and then you will be successful.",
-    "NLT": "7 Be strong and very courageous. Be careful to obey all the instructions Moses gave you. Do not deviate from them, turning either to the right or to the left. Then you will be successful in everything you do. 8 Study this Book of Instruction continually. Meditate on it day and night so you will be sure to obey everything written in it. Only then will you prosper and succeed in all you do."
-  },
-  "Hebrews 13:8": {
-    "KJV": "Jesus Christ the same yesterday, and to day, and for ever.",
-    "NKJV": "Jesus Christ is the same yesterday, today, and forever.",
-    "NIV": "Jesus Christ is the same yesterday and today and forever.",
-    "ESV": "Jesus Christ is the same yesterday and today and forever.",
-    "AMP": "Jesus Christ is the same [yesterday, today, and forever].",
-    "NLT": "Jesus Christ is the same yesterday, today, and forever."
-  },
-
-};
+  
+ };
 
 
 
@@ -276,93 +222,66 @@ const SundaySchoolApp = () => {
     };
     
 
+
 const [contentData, setContentData] = useState<ContentData>({
-    lessonDate: "June 14, 2026",
-    lessonTitle: "PRINCIPLES OF DIVINE PROVISION",
+    lessonDate: "June 21, 2026", // Assuming sequential weekly date following June 14
+    lessonTitle: "GOD CARES",
 
     memoryVerse:
-        "I will abundantly bless her provision; I will satisfy her poor with bread. - Ps. 132:15",
-    memoryVerseRef: "Psalm 132:15",
+        "casting all care upon Him, for He careth for you. - 1 Pet. 5:7",
+    memoryVerseRef: "1 Peter 5:7",
 
-    introScriptures: ["Genesis 1:1", "James 1:17", "John 8:32"],
-    lessonIntroScriptures: ["Matthew 15:29-37"],
+    introScriptures: ["Psalm 8:4", "Jeremiah 29:11", "John 3:16"],
+    lessonIntroScriptures: ["Numbers 11:4-6", "Numbers 11:10-15", "Numbers 11:33"],
 
     introduction:
-        "God is known to be the creator of all things and the One from whom every good and perfect gift comes. Gen 1:1; James 1:17. Owing to these facts, many people have sought him for provisions without having their desires met. The ultimate reason is because they neither understood the principles bordering around provisions nor walked in it. Man is a product of what he knows. John 8:32.",
+        "It is the assumption of many people that God is a careless figurehead who sits on his exalted throne, watching in enjoyment man and creation twisting themselves to destruction. This is not true because the scriptures prove God to be so careful for man and His domain. Ps 8:4, Jer 29:11, Jn 3:16. He is not the originator of our mess, yet He is so careful even for you regardless of your status.",
 
     aims:
-        "To tailor the believer to the knowledge of how to receive God's provisions.",
+        "To help all men realize and believe that God cares for all.",
 
     objectives:
-        "To get the believer to the place of endowment with the rich provisions of God.",
+        "To achieve concentration of God's care through knowledge. Hos 4:6.",
 
     lessonIntro:
-        "Jesus returned to Galilee to better the lot of His people and many took advantage of it and came to Him. They also came with their burdens which were lifted from them and had supernatural provision of food. This entire scene is a revelation of the relationship between man and God with principles that activates Divine provisions. Let us deduce the principles provided from the picture that is presented in the passage.",
+        "God sent Prophet Elijah to save the family of a dying widow about eighty (80) miles away from Samaria His choice land. Although a heathen (unbeliever), without a relationship with God, yet He reached out to rescue her, proving His care for all.",
 
     lessonPoints: [
         {
-            title: "KNOWLEDGE OF GOD'S CARE:",
+            title: "A COMMANDMENT OF HELP vs 9:",
             content:
-                "The first principle of divine provision is to realize that God cares for you and what you're going through. 1 Pet 5:7. These people came to Jesus with their heavy burdens because they knew that He will help them or else they would have come alone because of uncertainty. Verse 30",
-            scriptures: ["1 Peter 5:7", "Matthew 15:30"],
+                "The same way God commanded Elijah to this widow, He has for you. Until we recognize and relate with our Elijah, we may not experience a tangible change in our circumstance and thereby thinking that God doesn't care. Your help has come.",
+            scriptures: ["1 Kings 17:9"], // Corresponds to 'vs 10' referenced in text
             subPoints: [],
         },
         {
-            title: "RECIPIENTS HAVE TO COME TO JESUS:",
+            title: "NO DISTANCE, NO BARRIER vs 9:",
             content:
-                "If you want to receive divine provisions then you have to come to Jesus. Matt 11:28. Don't say He knows what I'm going through so let him help if he's willing. These people had the need and thus came to him without waiting for others to stand in for them. Verse 30.",
-            scriptures: ["Matthew 11:28", "Matthew 15:30"],
+                "There is no place too far for God to save, neither is there any race nor person that God is not willing to save. Luke 19:10. Prophet Elijah was commanded to go and save a widow about eighty miles away from Samaria. There is no barrier with God but with the individual that God determines to save. One can be the barrier to himself by despising or resisting His help.",
+            scriptures: ["1 Kings 17:9","Luke 19:10"],
             subPoints: [],
         },
         {
-            title: "CASTING NEEDS AT JESUS' FEET:",
+            title: "THE INDIVIDUAL'S PART vs 10-15:",
             content:
-                "This is the only way to receive his attention and help. He took care of every case that was laid at his feet. Verse 30-31, 1 Pet 5:7. Be sure that Jesus is in the place where you're taking your burdens to and also that you're not leaving them at the feet of church.",
-            scriptures: ["Matthew 15:30-31", "1 Peter 5:7"],
-            subPoints: [],
-        },
-        {
-            title: "TARRY WITH JESUS:",
-            content:
-                "One of the principles is to remain with Jesus wherever He is as these people did. They did not leave after one miracle service but stayed beyond. Verse 31 - 32. Most people who seek God today can't receive provisions because they are so unstable bodily and in heart. James 1:6-8.",
-            scriptures: ["Matthew 15:31-32", "James 1:6-8"],
-            subPoints: [],
-        },
-        {
-            title: "PRAISING THE GOD OF ISRAEL:",
-            content:
-                "Thanksgiving brings man to the entrance of Heaven but Praises ushers him to the very throne of God. Ps 100:4. They praised the God of Israel but which one are you praising. Be sure that you're praising God and that the praises are to the true God because he inhabits it (Ps 22:3) and in his presence there is fullness of joy. Ps 16:11.",
-            scriptures: ["Psalm 100:4", "Psalm 22:3", "Psalm 16:11"],
-            subPoints: [],
-        },
-        {
-            title: "GIVING TO THE RIGHT SOURCE:",
-            content:
-                "Sowing remains the only way of determining harvest but prayer only creates an atmosphere for sowing and reminding God to facilitate the harvest. The people gave their substance and received abundantly to overflowing. Verse 34 - 36; Luke 6:38; 2 Cor 9:6-8; Deut 8:18.",
-            scriptures: ["Matthew 15:34-36", "Luke 6:38", "2 Corinthians 9:6-8", "Deuteronomy 8:18"],
-            subPoints: [],
-        },
-        {
-            title: "OBEYING THE COMMANDMENTS OF GOD:",
-            content:
-                "Jesus asked them to sit down and they obeyed. Verse 35. This is not applicable to many of us as we daily violate his commandments. See Joshua 1:7-8.",
-            scriptures: ["Matthew 15:35", "Joshua 1:7-8"],
+                "God has done His part by sending His agent to help you as His measure of care, and you have to play your part to activate the help. John 3:16 - God sent... you believe... if not, the mission cannot be accomplished. This widow believed and sowed into the life of Prophet Elijah and was saved. Don't sit back and blame God for not caring, but walk to activate the care that's already provided. Your faith, obedience, and care for God's instrument of salvation will activate your miracle.",
+            scriptures: ["1 Kings 17:10-15"],
             subPoints: [],
         },
     ],
 
     conclusion:
-        "The principles are still the same today and if applied will give unequal divine provisions. Heb 13:8.",
+        "God cares even about the smallest things on earth, how much more man that He has made in His own image. LK12:6-7. Believe, receive and be well.",
 
-    conclusionScriptures: ["Hebrews 13:8"],
+    conclusionScriptures: ["Luke 12:6-7"],
 
+    // Generated dynamically to match the exact context and tone of the typed lesson
     prayerPoints: [
-        "Father, clear away all uncertainty and grant me a deep revelation and knowledge of Your personal care for my life.",
-        "Lord, give me the spiritual stability to tarry in Your presence without wavering, even when answers take time.",
-        "Father, give me an obedient heart to completely follow Your instructions so I can walk in the fullness of Your divine provision.",
+        "Lord, I throw off every heavy weight of worry and anchor my heart in the absolute truth that You see me, You know me, and You deeply care for me!",
+        "Father, I declare that no distance is too far and no barrier is too high for Your saving hand. I receive the divine help and strategic relationships sent to lift my life today!",
+        "Oh Lord, stir up a dynamic faith within me! I step out of passive waiting into bold obedience, knowing that my faith activates the supernatural breakthroughs You have already provided!"
     ],
 });
-
 
 
 
@@ -597,7 +516,7 @@ const [contentData, setContentData] = useState<ContentData>({
 
 
         if (appLoading) {
-    const animatedText = "June is my Month of Divine Mercy - Eccl. 33:17-19".split("");
+    const animatedText = "My Month of Divine Mercy - Eccl. 33:17-19".split("");
 
     return (
         <div className="fixed inset-0 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 flex items-center justify-center z-50">
@@ -704,7 +623,7 @@ const [contentData, setContentData] = useState<ContentData>({
                             Sunday School Lesson
                         </h1>
                         <p className="text-xl opacity-80">
-                            PRINCIPLES OF DIVINE PROVISION
+                            GOD CARES
                         </p>
                     </div>
                     <div className="grid md:grid-cols-2 gap-6">
@@ -974,20 +893,21 @@ const [contentData, setContentData] = useState<ContentData>({
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-bold mb-3">
-                                        Text: Matthew 15:29-37
+                                        Text: 1 Kings 17:8-16
                                     </h3>
                                     <div className="flex gap-2 flex-wrap">
                                         <button
                                             onClick={() =>
                                                 showBibleVersions(
-                                                    "Matthew 15:29-37"
+                                                    "1 Kings 17:8-16"
                                                 )
                                             }
-                                            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition flex items-center gap-2"
+                                            className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 mt-2 rounded-lg transition flex items-center gap-2 text-sm"
                                         >
                                         <BookOpen size={16} />
-                                            Read Matthew 15:29-37
+                                            Read 1 Kings 17:8-16
                                         </button>
+                                       
 
                                     </div>
                                 </div>
@@ -1014,40 +934,41 @@ const [contentData, setContentData] = useState<ContentData>({
                                     ) : (
                                         <p className="leading-relaxed">
                                             {contentData.introduction}
-                                            <div className="flex gap-4">
+                                            <div className="flex flex-wrap gap-2 mt-4">
                                                 <button
                                                 onClick={() =>
                                                     showBibleVersions(
-                                                        "Genesis 1:1"
+                                                        "Psalm 8:4"
                                                     )
                                                 }
-                                            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 mt-2 rounded-lg transition flex items-center gap-2 text-sm"
+                                            className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 mt-2 rounded-lg transition flex items-center gap-2 text-sm"
+                        
                                             >
                                             <BookOpen size={16} />
-                                                Genesis 1:1
+                                                Psalm 8:4
                                             </button>
 
                                             <button
                                             onClick={() =>
                                                 showBibleVersions(
-                                                    "James 1:17"
+                                                    "Jeremiah 29:11"
                                                 )
                                             }
                                          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 mt-2 rounded-lg transition flex items-center gap-2 text-sm"
                                         >
                                             <BookOpen size={16} />
-                                                James 1:17
+                                                Jeremiah 29:11
                                             </button>
                                             <button
                                             onClick={() =>
                                                 showBibleVersions(
-                                                    "John 8:32"
+                                                    "John 3:16"
                                                 )
                                             }
                                          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 mt-2 rounded-lg transition flex items-center gap-2 text-sm"
                                         >
                                             <BookOpen size={16} />
-                                                John 8:32
+                                                John 316
                                             </button>
                                             </div>
                                             
@@ -1166,7 +1087,7 @@ const [contentData, setContentData] = useState<ContentData>({
                                 ) : (
                                     <p className="leading-relaxed mb-4">
                                         {contentData.lessonIntro}
-                                        <div className="mt-4 flex flex-wrap gap-2">
+                                        {/* <div className="mt-4 flex flex-wrap gap-2">
                                             {contentData.lessonIntroScriptures.map(
                                                 (scripture) => (
                                                     <button
@@ -1184,7 +1105,7 @@ const [contentData, setContentData] = useState<ContentData>({
                                                 )
                                             )}
                                     
-                                        </div>
+                                        </div> */}
                                         
                                     </p>
                                     
