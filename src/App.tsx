@@ -228,7 +228,7 @@ const [contentData, setContentData] = useState<ContentData>({
     lessonTitle: "GOD CARES",
 
     memoryVerse:
-        "Casting all care upon Him, for He careth for you. - 1 Pet. 5:7",
+        "Casting all your care upon Him; for He careth for you. - 1 Pet. 5:7",
     memoryVerseRef: "1 Peter 5:7",
 
     introScriptures: ["Psalm 8:4", "Jeremiah 29:11", "John 3:16"],
